@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_inappbrowser/flutter_inappbrowser.dart';
+// import 'package:flutter_inappbrowser/flutter_inappbrowser.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class YoutubePlayerWidget extends StatefulWidget {
   @override
@@ -16,7 +19,8 @@ class YoutubePlayerWidget extends StatefulWidget {
 }
 
 class _YoutubePlayerWidgetState extends State<YoutubePlayerWidget> {
-  InAppWebViewController _controller;
+  // InAppWebViewController _controller;
+  var _controller = Completer<WebViewController>();
 
   String get _videoId {
     RegExp rgx = RegExp(
@@ -39,12 +43,19 @@ class _YoutubePlayerWidgetState extends State<YoutubePlayerWidget> {
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: widget.aspectRatio,
-      child: InAppWebView(
-        initialUrl: _embedUrl,
-        onWebViewCreated: (InAppWebViewController controller) {
-          _controller = controller;
-        },
+      child:WebView(
+          onWebViewCreated: (WebViewController webViewController) {
+            _controller.complete(webViewController);
+          },
+          initialUrl: _embedUrl,
+          javascriptMode: JavascriptMode.unrestricted,
       ),
+      // child: InAppWebView(
+      //   initialUrl: _embedUrl,
+      //   onWebViewCreated: (InAppWebViewController controller) {
+      //     _controller = controller;
+      //   },
+      // ),
     );
   }
 }
