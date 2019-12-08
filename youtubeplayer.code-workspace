@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "youtubeplayer"
+		},
+		{
+			"path": "platforms\\iframe_web"
+		},
+		{
+			"path": "platforms\\iframe_mobile"
+		}
+	],
+	"settings": {}
+}
