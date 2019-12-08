@@ -7,7 +7,9 @@ Works in IOS, Android and Web.
 ## pubspec.yaml
 ```yaml
   youtubeplayer:
-    path: ../
+    git:
+      url: git://github.com/davidsdearaujo/youtubeplayer.git
+      path: youtubeplayer
 ```
 
 ## import

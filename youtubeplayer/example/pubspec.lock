@@ -82,16 +82,20 @@ packages:
   iframe_mobile:
     dependency: transitive
     description:
-      path: "..\\..\\platforms\\iframe_mobile"
-      relative: true
-    source: path
+      path: "platforms/iframe_mobile"
+      ref: HEAD
+      resolved-ref: "5230b7b246d190a0db934fedfe30fd27c7fc3195"
+      url: "git://github.com/davidsdearaujo/youtubeplayer.git"
+    source: git
     version: "0.0.1"
   iframe_web:
     dependency: transitive
     description:
-      path: "..\\..\\platforms\\iframe_web"
-      relative: true
-    source: path
+      path: "platforms/iframe_web"
+      ref: HEAD
+      resolved-ref: "5230b7b246d190a0db934fedfe30fd27c7fc3195"
+      url: "git://github.com/davidsdearaujo/youtubeplayer.git"
+    source: git
     version: "0.1.0"
   image:
     dependency: transitive

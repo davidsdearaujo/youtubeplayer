@@ -1,8 +1,8 @@
 name: youtubeplayer
 description: A new Flutter package project.
 version: 0.0.1
-author:
-homepage:
+author: Deivão
+homepage: http://flutterando.com.br/
  
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -10,11 +10,21 @@ environment:
 dependencies:
   webview_flutter: ^0.3.17
 
-  iframe_web: 
-    path: ../platforms/iframe_web
+  # iframe_web: 
+  #   path: ../platforms/iframe_web
 
-  iframe_mobile: 
-    path: ../platforms/iframe_mobile
+  # iframe_mobile: 
+  #   path: ../platforms/iframe_mobile
+
+  iframe_web:
+    git:
+      url: git://github.com/davidsdearaujo/youtubeplayer.git
+      path: platforms/iframe_web
+  
+  iframe_mobile:
+    git:
+      url: git://github.com/davidsdearaujo/youtubeplayer.git
+      path: platforms/iframe_mobile
     
   flutter:
     sdk: flutter
