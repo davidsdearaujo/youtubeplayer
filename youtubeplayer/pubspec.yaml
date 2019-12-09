@@ -10,21 +10,15 @@ environment:
 dependencies:
   webview_flutter: ^0.3.17
 
-  iframe_web: 
-    path: ../platforms/iframe_web
-
-  iframe_mobile: 
-    path: ../platforms/iframe_mobile
-
-  # iframe_web:
-  #   git:
-  #     url: git://github.com/davidsdearaujo/youtubeplayer.git
-  #     path: platforms/iframe_web
+  iframe_web:
+    git:
+      url: git://github.com/davidsdearaujo/youtubeplayer.git
+      path: platforms/iframe_web
   
-  # iframe_mobile:
-  #   git:
-  #     url: git://github.com/davidsdearaujo/youtubeplayer.git
-  #     path: platforms/iframe_mobile
+  iframe_mobile:
+    git:
+      url: git://github.com/davidsdearaujo/youtubeplayer.git
+      path: platforms/iframe_mobile
     
   flutter:
     sdk: flutter
