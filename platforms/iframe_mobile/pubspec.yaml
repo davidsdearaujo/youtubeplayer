@@ -1,11 +1,7 @@
 name: iframe_mobile
-description: A new Flutter package project.
 version: 0.0.1
-author: Deivão
-homepage: http://flutterando.com.br/
 
-environment:
-  sdk: ">=2.1.0 <3.0.0"
+flutter:
 
 dependencies:
   webview_flutter: ^0.3.17
@@ -16,4 +12,5 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter:
+environment:
+  sdk: ">=2.1.0 <3.0.0"
